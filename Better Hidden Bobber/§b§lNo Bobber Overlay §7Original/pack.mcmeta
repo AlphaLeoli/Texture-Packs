@@ -1,0 +1,7 @@
+{
+    "pack": {
+        "pack_format": 22,
+        "supported_formats": {"min_inclusive": 22, "max_inclusive": 99},
+        "description": "§bMade by AlphaLeoli\n§7Removes bobbers in your face"
+    }
+}

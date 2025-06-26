@@ -1,0 +1,13 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "minecraft:item/gaps/63"
+  },
+  "display": {
+    "thirdperson_righthand": {
+            "rotation":[ 90, -180, 0 ],
+            "translation":[ 0, 0.6, 3 ],
+            "scale":[ 0.55, 0.55, 0.55 ]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/golden_apple",
+  "textures": {
+    "layer0": "minecraft:item/gaps/12"
+  }
+}
