@@ -1,0 +1,7 @@
+{
+    "rpo.leaves.title": "Windy Leaves",
+    "rpo.leaves.speed": "Speed",
+    "rpo.leaves.scale": "Scale",
+    "rpo.leaves.speed.tooltip": "Speed of the wind effect on the leaves",
+    "rpo.leaves.scale.tooltip": "Size of the effect"
+}

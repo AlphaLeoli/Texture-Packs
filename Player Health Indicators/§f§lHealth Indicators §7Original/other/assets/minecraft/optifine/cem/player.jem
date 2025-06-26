@@ -1,0 +1,20 @@
+{
+    "models": [
+		{
+			"part": "body",
+			"id": "facing_player",
+			"model": "player_health.jpm",
+            		"attach": "true",
+			"animations": [
+				{
+					"facing_player.rx": "-body.rx",
+					"facing_player.ry": "-body.ry",
+					"facing_player.rz": "-body.rz",
+					"health_bar.ty": "-14",
+					"health_bar.ry": "player_rot_y - rot_y + torad(0)",
+					"health_bar.rx": "player_rot_x"
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,5 @@
+{
+    expansions: {
+        scale: "0.7 + (sizes.items - 1.0) * 0.05}"
+    }
+}

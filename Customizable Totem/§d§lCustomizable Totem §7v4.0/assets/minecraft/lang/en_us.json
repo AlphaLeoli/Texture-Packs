@@ -1,0 +1,6 @@
+{
+    "rpo.totem.title": "Customizable Totem",
+
+    "rpo.totem.path": "(Texture Pack Folder)/assets/minecraft/models/",
+    "rpo.totem.path.tooltip": "The path to the custom totem texture, which should be your skin and MUST be a png"
+}

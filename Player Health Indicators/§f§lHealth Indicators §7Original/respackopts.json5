@@ -1,0 +1,8 @@
+{
+    id: "healthIndicators",
+    version: 13,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        enabled: true
+    }
+}

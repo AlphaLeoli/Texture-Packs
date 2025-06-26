@@ -1,0 +1,84 @@
+{
+    "targets": [
+        "water",
+        "translucent",
+        "itemEntity",
+        "particles",
+        "clouds",
+        "weather",
+        "text",
+        "final"
+    ],
+    "passes": [
+        {
+            "name": "transparency",
+            "intarget": "minecraft:main",
+            "outtarget": "text",
+            "auxtargets": [
+                {
+                    "name": "DiffuseDepthSampler",
+                    "id": "minecraft:main:depth"
+                },
+                {
+                    "name": "TranslucentSampler",
+                    "id": "translucent"
+                },
+                {
+                    "name": "TranslucentDepthSampler",
+                    "id": "translucent:depth"
+                },
+                {
+                    "name": "ItemEntitySampler",
+                    "id": "itemEntity"
+                },
+                {
+                    "name": "ItemEntityDepthSampler",
+                    "id": "itemEntity:depth"
+                },
+                {
+                    "name": "ParticlesSampler",
+                    "id": "particles"
+                },
+                {
+                    "name": "ParticlesDepthSampler",
+                    "id": "particles:depth"
+                },
+                {
+                    "name": "CloudsSampler",
+                    "id": "clouds"
+                },
+                {
+                    "name": "CloudsDepthSampler",
+                    "id": "clouds:depth"
+                },
+                {
+                    "name": "WeatherSampler",
+                    "id": "weather"
+                },
+                {
+                    "name": "WeatherDepthSampler",
+                    "id": "weather:depth"
+                }
+            ]
+        },
+        {
+            "name": "transform",
+            "intarget": "text",
+            "outtarget": "final",
+            "auxtargets": [
+                {
+                    "name": "AsciiSampler",
+                    "id": "ascii",
+                    "width": 128,
+                    "height": 128,
+                    "bilinear": false
+                }
+            ]
+        },
+        {
+            "name": "blit",
+            "intarget": "final",
+            "outtarget": "minecraft:main"
+        }
+    ]
+}

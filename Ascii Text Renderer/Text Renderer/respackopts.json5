@@ -1,0 +1,13 @@
+{
+    id: "textrenderer",
+    version: 13,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        color: {
+            type: "enum",
+            default: "white",
+            values: ["minecraft", "mario", "hacker", "desaturated", "white"]
+        },
+        size: 8
+    }
+}

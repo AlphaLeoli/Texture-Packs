@@ -1,0 +1,4 @@
+{
+    condition: "false",
+    fallback: "assets/minecraft/shaders/core/rendertype_cutout_mipped_2.vsh"
+}

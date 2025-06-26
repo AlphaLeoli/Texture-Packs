@@ -1,0 +1,17 @@
+{
+    id: "sizes",
+    version: 9,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        blocks: {
+            min: 1.0,
+            default: 5.0,
+            max: 10.0
+        },
+        items: {
+            min: 1.0,
+            default: 5.0,
+            max: 10.0
+        }
+    }
+}

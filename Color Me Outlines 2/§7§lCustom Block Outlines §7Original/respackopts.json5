@@ -1,0 +1,32 @@
+{
+    id: "outlines",
+    version: 9,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        red: {
+            min: 0.0,
+            default: 0.0,
+            max: 255.0
+        },
+        green: {
+            min: 0.0,
+            default: 0.0,
+            max: 255.0
+        },
+        blue: {
+            min: 0.0,
+            default: 0.0,
+            max: 255.0
+        },
+        alpha: {
+            min: 0.0,
+            default: 40.0,
+            max: 100.0
+        },
+        width: {
+            min: 0.0,
+            default: 2.0,
+            max: 10.0
+        }
+    }
+}

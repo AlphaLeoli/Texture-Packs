@@ -1,0 +1,4 @@
+{
+    condition: "false",
+    fallback: "assets/minecraft/shaders/core/custom/rendertype_lines.vsh"
+}

@@ -1,0 +1,11 @@
+{
+    id: "totem",
+    version: 13,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        path: {
+            type: "string",
+            default: "item/totem_skin"
+        }
+    }
+}

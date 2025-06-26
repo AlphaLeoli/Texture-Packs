@@ -1,0 +1,5 @@
+{
+    expansions: {
+        scale: "0.175 + (sizes.blocks - 1.0) * 0.05}"
+    }
+}

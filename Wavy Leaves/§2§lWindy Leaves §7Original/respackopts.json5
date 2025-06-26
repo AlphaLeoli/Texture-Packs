@@ -1,0 +1,17 @@
+{
+    id: "leaves",
+    version: 9,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        speed: {
+            min: 1,
+            default: 5,
+            max: 10
+        },
+        scale: {
+            min: 1,
+            default: 5,
+            max: 10
+        }
+    }
+}

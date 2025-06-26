@@ -1,0 +1,9 @@
+{
+    "rpo.sizes.title": "Custom Item Sizes",
+
+    "rpo.sizes.blocks": "Block Scale",
+    "rpo.sizes.items": "Item Scale",
+
+    "rpo.sizes.blocks.tooltip": "Scale of all blocks",
+    "rpo.sizes.items.tooltip": "Scale of all items"
+}
