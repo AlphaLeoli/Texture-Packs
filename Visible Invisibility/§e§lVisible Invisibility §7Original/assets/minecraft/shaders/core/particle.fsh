@@ -11,7 +11,8 @@ uniform vec4 FogColor;
 
 in float vertexDistance;
 in vec2 texCoord0;
-in vec4 vertexColor;
+in vec4 lightColor;
+in vec4 particleColor;
 
 out vec4 fragColor;
 
@@ -21,7 +22,7 @@ void main() {
     // 127.5 == black
     // 191.25 == transparent
     // 63.75 == yellow
-    if (round(vertexColor.rgb * 1000000) == vec3(964706)) {
+    if (round(particleColor.rgb * 1000000) == vec3(964706)) {
         float alpha = round(color.a * 100.0);
         if (alpha > 60.0) {
             discard;
@@ -36,9 +37,10 @@ void main() {
         if (color.rgb == vec3(1.0, 0.0, 0.0)) {
             discard;
         } else {
-            color *= vertexColor;
+            color *= particleColor;
         }
     }
+    color *= lightColor;
     if (color.a < 0.1) {
         discard;
     } else {
