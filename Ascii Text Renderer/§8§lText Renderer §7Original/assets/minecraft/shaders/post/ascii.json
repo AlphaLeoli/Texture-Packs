@@ -1,14 +1,9 @@
 {
-    "blend": {
-        "func": "add",
-        "srcrgb": "srcalpha",
-        "dstrgb": "1-srcalpha"
-    },
-    "vertex": "blit",
-    "fragment": "transform",
-    "attributes": [ "Position" ],
+    "vertex": "minecraft:post/blit",
+    "fragment": "minecraft:post/ascii",
     "samplers": [
-        { "name": "DiffuseSampler" },
+        { "name": "InSampler" },
+        { "name": "MinecraftSampler" },
         { "name": "AsciiSampler" }
     ],
     "uniforms": [

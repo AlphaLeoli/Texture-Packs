@@ -1,6 +1,0 @@
-{
-    expansions: {
-        colorMode: "textrenderer.color",
-        size: "textrenderer.size"
-    }
-}

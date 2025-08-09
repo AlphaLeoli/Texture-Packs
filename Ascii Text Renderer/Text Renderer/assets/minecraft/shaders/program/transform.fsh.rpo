@@ -1,4 +1,0 @@
-{
-    condition: "false",
-    fallback: "assets/minecraft/shaders/program/custom/transform.fsh"
-}

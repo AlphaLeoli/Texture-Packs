@@ -1,0 +1,10 @@
+{
+	"pack": {
+		"pack_format": 36,
+		"description": "§8By AlphaLeoli\n§7Set graphics to fabulous!",
+		"supported_formats": {
+            "min_inclusive": 36,
+            "max_inclusive": 500
+        }
+	}
+}
