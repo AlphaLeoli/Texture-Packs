@@ -1,7 +1,10 @@
 {
     "pack": {
         "pack_format": 22,
-        "supported_formats": {"min_inclusive":15, "max_inclusive": 34},
-        "description": "§7Made by AlphaLeoli"
+        "supported_formats": {
+            "min_inclusive": 15,
+            "max_inclusive": 500
+        },
+        "description": "§fMade by AlphaLeoli\n§7See your enemy's health bar"
     }
 }
