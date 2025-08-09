@@ -1,0 +1,18 @@
+{
+    id: "myPack",
+    version: 13,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        showDiamond: true,
+        showLapis: true,
+        showDebris: true,
+        showGold: true,
+        showIron: true,
+        showRedstone: true,
+        showCopper: true,
+        showCoal: true,
+        showEmerald: true,
+        showBlocks: false,
+        showQuartz: true
+    }
+}
