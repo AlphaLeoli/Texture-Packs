@@ -1,4 +1,0 @@
-{
-    condition: "false",
-    fallback: "assets/minecraft/models/item/totem_of_undying_2.json"
-}
