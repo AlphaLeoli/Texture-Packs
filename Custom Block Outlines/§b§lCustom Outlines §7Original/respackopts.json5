@@ -1,6 +1,6 @@
 {
     id: "outlines",
-    version: 9,
+    version: 13,
     capabilities: ["FileFilter", "DirFilter"],
     conf: {
         red: {
