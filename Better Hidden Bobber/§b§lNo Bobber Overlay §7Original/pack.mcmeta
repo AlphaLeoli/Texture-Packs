@@ -1,7 +1,30 @@
 {
     "pack": {
-        "pack_format": 22,
-        "supported_formats": {"min_inclusive": 22, "max_inclusive": 99},
+        "pack_format": 34,
+        "supported_formats": {
+            "min_inclusive": 34,
+            "max_inclusive": 500
+        },
         "description": "§bMade by AlphaLeoli\n§7Removes bobbers in your face"
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "1_21-1_21_1",
+                "formats": [34, 36]
+            },
+            {
+                "directory": "1_21_2-1_21_4",
+                "formats": [37, 51]
+            },
+            {
+                "directory": "1_21_5",
+                "formats": [52, 56]
+            },
+            {
+                "directory": "1_21_6-1_21_8",
+                "formats": [57, 500]
+            }
+        ]
     }
 }

@@ -1,6 +1,7 @@
 #version 150
 
 #moj_import <minecraft:fog.glsl>
+#moj_import <minecraft:no_bobber_overlay.glsl>
 
 uniform sampler2D Sampler0;
 
@@ -24,6 +25,7 @@ void main() {
         discard;
     }
 #endif
+    if (isBobberTooClose(vertexDistance, color.a)) discard;
     color *= vertexColor * ColorModulator;
 #ifndef NO_OVERLAY
     color.rgb = mix(overlayColor.rgb, color.rgb, overlayColor.a);
@@ -31,8 +33,5 @@ void main() {
 #ifndef EMISSIVE
     color *= lightMapColor;
 #endif
-    if (vertexDistance < 0.42 && round(color.a*100) == 98) {
-        discard;
-    }
     fragColor = linear_fog(color, vertexDistance, FogStart, FogEnd, FogColor);
 }
