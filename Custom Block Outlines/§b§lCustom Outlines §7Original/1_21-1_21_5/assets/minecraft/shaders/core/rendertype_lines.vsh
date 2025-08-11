@@ -1,5 +1,8 @@
 #version 150
 
+#moj_import <minecraft:fog.glsl>
+#moj_import <minecraft:custom_outlines.glsl>
+
 in vec3 Position;
 in vec4 Color;
 in vec3 Normal;
@@ -8,6 +11,7 @@ uniform mat4 ModelViewMat;
 uniform mat4 ProjMat;
 uniform float LineWidth;
 uniform vec2 ScreenSize;
+uniform int FogShape;
 
 out float vertexDistance;
 out vec4 vertexColor;
@@ -28,7 +32,7 @@ void main() {
     vec3 ndc2 = linePosEnd.xyz / linePosEnd.w;
 
     vec2 lineScreenDirection = normalize((ndc2.xy - ndc1.xy) * ScreenSize);
-    vec2 lineOffset = vec2(-lineScreenDirection.y, lineScreenDirection.x) * LineWidth / ScreenSize;
+    vec2 lineOffset = vec2(-lineScreenDirection.y, lineScreenDirection.x) * width / ScreenSize;
 
     if (lineOffset.x < 0.0) {
         lineOffset *= -1.0;
@@ -40,10 +44,6 @@ void main() {
         gl_Position = vec4((ndc1 - vec3(lineOffset, 0.0)) * linePosStart.w, linePosStart.w);
     }
 
-    vertexDistance = length((ModelViewMat * vec4(Position, 1.0)).xyz);
-	vec4 temp = Color;
-	if (Color == vec4(0,0,0,.4)){
-		temp = vec4(0.8588, 0.0902, 0.8588, 0.75);
-	}
-    vertexColor = temp;
+    vertexDistance = fog_distance(Position, FogShape);
+    vertexColor = getColor(Color);
 }

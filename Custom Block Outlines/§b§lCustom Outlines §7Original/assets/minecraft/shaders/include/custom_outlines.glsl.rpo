@@ -1,0 +1,4 @@
+{
+    condition: "false",
+    fallback: "assets/minecraft/shaders/include/respackopts/custom_outlines_respackopts.glsl"
+}

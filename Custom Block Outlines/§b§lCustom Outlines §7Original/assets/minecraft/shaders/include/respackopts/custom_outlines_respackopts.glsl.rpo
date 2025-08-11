@@ -3,7 +3,7 @@
         r: "outlines.red / 255",
         g: "outlines.green / 255",
         b: "outlines.blue / 255",
-        a: "outlines.alpha / 100",
+        a: "outlines.alpha",
         w: "outlines.width"
     }
 }
