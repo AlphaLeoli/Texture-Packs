@@ -1,6 +1,6 @@
 #version 150
 
-#moj_import <minecraft:fog.glsl>
+#moj_import <fog.glsl>
 
 in vec3 Position;
 in vec2 UV0;
@@ -15,6 +15,7 @@ uniform int FogShape;
 
 out float vertexDistance;
 out vec2 texCoord0;
+
 out vec4 lightColor;
 out vec4 particleColor;
 
@@ -23,6 +24,7 @@ void main() {
 
     vertexDistance = fog_distance(Position, FogShape);
     texCoord0 = UV0;
+    
     lightColor = texelFetch(Sampler2, UV2 / 16, 0);
     particleColor = Color;
 }

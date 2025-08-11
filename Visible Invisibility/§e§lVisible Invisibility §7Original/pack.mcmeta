@@ -1,7 +1,26 @@
 {
     "pack": {
-        "pack_format": 46,
-        "supported_formats": {"min_inclusive":15, "max_inclusive": 55},
+        "pack_format": 34,
+        "supported_formats": {
+            "min_inclusive": 34,
+            "max_inclusive": 500
+        },
         "description": "§eMade by AlphaLeoli\n§7Better Invisibility Particles"
+    },
+    "overlays": {
+        "entries": [
+            {
+                "directory": "1_21-1_21_1",
+                "formats": [34, 35]
+            },
+            {
+                "directory": "1_21_2-1_21_5",
+                "formats": [36, 56]
+            },
+            {
+                "directory": "1_21_6-1_21_8",
+                "formats": [57, 500]
+            }
+        ]
     }
 }
