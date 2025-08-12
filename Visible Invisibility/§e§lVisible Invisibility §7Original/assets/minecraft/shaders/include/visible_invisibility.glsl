@@ -25,4 +25,5 @@ vec4 getParticleColor(vec4 color, vec4 particleColor) {
             color *= particleColor;
         }
     }
+    return color;
 }
