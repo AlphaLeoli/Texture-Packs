@@ -1,3 +1,4 @@
+// If you're on 1.21.1 or earlier, then edit the config found at the top of the 1_21-1_21_1/assets/minecraft/shaders/program/ascii.fsh file
 #version 150
 
 // If true, only the outlines render. Try it out, its very interesting

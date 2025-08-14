@@ -1,0 +1,23 @@
+These paragraphs were originally in the "text_renderer_pixelize.glsl" include. So read it like it's still in there.
+You may be wondering why I have an entire pixelation shader instead of just simply sampling the texcoord at a floored position.
+This is because you get very ugly gaps in lines, and that's bad for what I'm trying to do here. By only allowing these 8x8 pixels
+to be black if there are 40+ pixels in the area that are black, you can get nice continuations of lines. However, this requires
+you to loop through 64 pixels for each pixel on the screen, which is obviously pretty costly. I don't know how to mitigate this,
+at least using Minecraft Vanilla's shaders system. So sorry if it lags.
+
+Another thing that might seem weird is the `int id = int(dot(pixelColor, vec3(1.0, 2.0, 3.0)));` calculation that is found in both
+this shader and the ascii.fsh shader. The formula doesn't actually mean anything, it was just a nice way to avoid looping or making
+lots of if statements or switch cases. It works by mapping the r, g, and b channels to the numbers 1 through 3 respectively. Then, it
+adds all the mapped values together (ex: because purple is 1 r and 1 b, it can be id'd as 4 because 1 + 3 = 4). 
+
+Also ik i can just use one color channel to represent every possible thing, but I'm just not gonna do that just bc. And ik there are so many
+optimizations that can be done, but I'm very tired with making this pack. I started doing this a long long time ago when I was very inexperienced
+with shaders, so now that I can see all my mistakes I'm very overwhelmed. I've been trying to add respackopts support to this for so long and i
+figured out that it was an issue with respackopts and not me, so i'm just not going to support it. i am finally free from this project </3
+
+
+And this was written long after that, when I'm making it easier for me to update the pack.
+I'm so so so sorry this isn't well optimized, and there's a lot of pointless things. This pack was never meant to be something that I worked on
+more than one time, and now I'm keeping it updated since a lot of people seemed to like it. However, I still don't really care about the pack well
+enough to optimize it a lot. And I'm already tired of having to work on the pack so much. So I'm very sorry that it isn't perfect, it's mostly meant
+to just be a proof of concept

@@ -1,26 +1,8 @@
 #version 150
 
-uniform sampler2D MainDepthSampler;
-
-uniform mat4 ProjMat;
-
-uniform vec2 MainDepthSize;
-
-in vec2 texCoord;
-
-out vec4 fragColor;
-
-vec2 texelSize = 1.0 / MainDepthSize;
+vec2 texelSize = 1.0 / OutSize;
 vec2 vOffset = vec2(0.0, texelSize.y);
 vec2 hOffset = vec2(texelSize.x, 0.0);
-
-float near = 0.1;
-float far  = 1.0;
-
-float linearizeDepth(float depth) {
-    float z = depth * 2.0 - 1.0;
-    return (near * far) / (far + near - z * (far - near));    
-}
 
 float getDepth(vec2 offset) {
     float depth = texture(MainDepthSampler, texCoord + offset).r;
@@ -42,7 +24,8 @@ vec3 getNormal(vec2 offset) {
     return normalize(cross(px - p, py - p));
 }
 
-void main() {
+// Main Code
+vec4 getEdgeColor() {
     float centerD = getDepth(vec2(0.0));
     float leftD =   getDepth(-hOffset);
     float rightD =  getDepth(+hOffset);
@@ -75,5 +58,5 @@ void main() {
     float edge = min(depthEdge, normalEdge);
     edge = float(edge > 0.00002 ? 1.0 : 0.0);
 
-    fragColor = vec4(vec3(edge), 1.0);
+    return vec4(vec3(edge), 1.0);
 }

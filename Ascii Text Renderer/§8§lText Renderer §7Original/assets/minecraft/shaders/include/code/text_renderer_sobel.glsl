@@ -1,12 +1,6 @@
 #version 150
 
-uniform sampler2D InSampler;
-uniform vec2 InSize;
-
-in vec2 texCoord;
-out vec4 fragColor;
-
-vec2 texelSize = 1.0 / InSize;
+vec2 texelSize = 1.0 / OutSize;
 
 const float kernelX[9] = float[](
     -1.0, 0.0, 1.0,
@@ -33,7 +27,8 @@ const vec3 colorMap[4] = vec3[](
     vec3(0.0, 1.0, 0.0)  // Green
 );
 
-void main() {
+// Main Code
+vec4 getSobelColor() {
     float Gx = 0.0;
     float Gy = 0.0;
 
@@ -65,5 +60,5 @@ void main() {
     int id = int(mod((angle + 22.5) / 45.0, 8.0)) % 4;
     vec3 color = colorMap[id];
 
-    fragColor = vec4(color, 1.0);
+    return vec4(color, 1.0);
 }
