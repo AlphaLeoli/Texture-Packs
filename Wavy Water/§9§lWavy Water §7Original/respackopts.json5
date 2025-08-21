@@ -1,0 +1,22 @@
+{
+    id: "waves",
+    version: 13,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        speed: {
+            min: 1,
+            default: 5,
+            max: 10
+        },
+        amplitude: {
+            min: 1,
+            default: 5,
+            max: 10
+        },
+        size: {
+            min: 1,
+            default: 5,
+            max: 10
+        }
+    }
+}
