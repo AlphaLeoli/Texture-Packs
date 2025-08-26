@@ -52,5 +52,6 @@ vec4 getParticleColor() {
     }
 
     vec4 color = textureColor * lightColor * tintColor * ColorModulator;
+    if (textureColor.a < 0.1) discard;
     return color;
 }
