@@ -16,7 +16,7 @@ out float cylindricalVertexDistance;
 out vec2 texCoord0;
 
 out vec4 lightColor;
-out vec4 particleColor;
+out vec4 particleTint;
 
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
@@ -26,5 +26,5 @@ void main() {
     texCoord0 = UV0;
     
     lightColor = texelFetch(Sampler2, UV2 / 16, 0);
-    particleColor = Color;
+    particleTint = Color;
 }

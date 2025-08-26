@@ -2,7 +2,6 @@
 
 #moj_import <minecraft:fog.glsl>
 #moj_import <minecraft:dynamictransforms.glsl>
-#moj_import <minecraft:visible_invisibility.glsl>
 
 uniform sampler2D Sampler0;
 
@@ -11,18 +10,12 @@ in float cylindricalVertexDistance;
 in vec2 texCoord0;
 
 in vec4 lightColor;
-in vec4 particleColor;
+in vec4 particleTint;
 
 out vec4 fragColor;
 
+#moj_import <minecraft:visible_invisibility.glsl>
+
 void main() {
-    vec4 color = texture(Sampler0, texCoord0) * ColorModulator;
-    color = getParticleColor(color, particleColor);
-    color *= lightColor;
-    if (color.a < 0.1) {
-        discard;
-    } else {
-        color.a = 1.0;
-    }
-    fragColor = apply_fog(color, sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
+    fragColor = apply_fog(getParticleColor(), sphericalVertexDistance, cylindricalVertexDistance, FogEnvironmentalStart, FogEnvironmentalEnd, FogRenderDistanceStart, FogRenderDistanceEnd, FogColor);
 }
