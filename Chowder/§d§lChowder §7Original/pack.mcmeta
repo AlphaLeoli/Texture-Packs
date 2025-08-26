@@ -1,0 +1,22 @@
+{
+   "pack": {
+      "pack_format": 36,
+      "supported_formats": {
+         "min_inclusive": 36,
+         "max_inclusive": 500
+      },
+      "description": "§dMade By AlphaLeoli\n§7Incompatible with Sodium" 
+   },
+   "overlays": {
+      "entries": [
+         {
+               "directory": "1_21_2-1_21_5",
+               "formats": [36, 56]
+         },
+         {
+               "directory": "1_21_6-1_21_8",
+               "formats": [57, 500]
+         }
+      ]
+   }
+}
