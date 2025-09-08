@@ -1,0 +1,6 @@
+{
+    expansions: {
+        palette: "paletteSwitcher.palette",
+        ditherSize: "paletteSwitcher.ditherSize"
+    }
+}

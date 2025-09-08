@@ -1,0 +1,9 @@
+{
+    expansions: {
+        colorMode: "paletteSwitcher.colorMode",
+        ditherScale: "paletteSwitcher.ditherScale",
+        ditherAmount: "paletteSwitcher.ditherAmount / 100.0",
+        oklabComparisons: "paletteSwitcher.oklabComparisons",
+        autoLumSorting: "paletteSwitcher.autoLumSorting"
+    }
+}

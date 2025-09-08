@@ -1,0 +1,92 @@
+{
+    "targets": [
+        "water",
+        "translucent",
+        "itemEntity",
+        "particles",
+        "clouds",
+        "weather",
+        "game",
+        "palette"
+    ],
+    "passes": [
+        {
+            "name": "transparency",
+            "intarget": "minecraft:main",
+            "outtarget": "game",
+            "auxtargets": [
+                {
+                    "name": "DiffuseDepthSampler",
+                    "id": "minecraft:main:depth"
+                },
+                {
+                    "name": "TranslucentSampler",
+                    "id": "translucent"
+                },
+                {
+                    "name": "TranslucentDepthSampler",
+                    "id": "translucent:depth"
+                },
+                {
+                    "name": "ItemEntitySampler",
+                    "id": "itemEntity"
+                },
+                {
+                    "name": "ItemEntityDepthSampler",
+                    "id": "itemEntity:depth"
+                },
+                {
+                    "name": "ParticlesSampler",
+                    "id": "particles"
+                },
+                {
+                    "name": "ParticlesDepthSampler",
+                    "id": "particles:depth"
+                },
+                {
+                    "name": "CloudsSampler",
+                    "id": "clouds"
+                },
+                {
+                    "name": "CloudsDepthSampler",
+                    "id": "clouds:depth"
+                },
+                {
+                    "name": "WeatherSampler",
+                    "id": "weather"
+                },
+                {
+                    "name": "WeatherDepthSampler",
+                    "id": "weather:depth"
+                }
+            ]
+        },
+        {
+            "name": "palette",
+            "intarget": "game",
+            "outtarget": "palette",
+            "auxtargets": [
+                {
+                    "sampler_name": "DitherSampler",
+                    "id": "dither_4",
+                    "width": 4,
+                    "height": 4,
+                    "bilinear": false
+                },
+                {
+                    "sampler_name": "PaletteSampler",
+                    "id": "starry",
+                    "width": 32,
+                    "height": 1,
+                    "bilinear": false
+                }
+                
+            ]
+        },
+        {
+            "name": "blit",
+            "intarget": "palette",
+            "outtarget": "minecraft:main"
+        }
+    ]
+}

@@ -1,0 +1,43 @@
+{
+    id: "paletteSwitcher",
+    version: 9,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        colorMode: {
+            type: "enum",
+            default: "1",
+            values: ["0", "1"]
+        },
+        palette: {
+            type: "string",
+            default: "starry"
+        },
+        ditherSize: {
+            type: "enum",
+            default: "4",
+            values: ["4", "16", "32", "64", "128", "256", "512"]
+        },
+        ditherScale: {
+            type: "integer",
+            default: 1,
+            min: 1,
+            max: 10
+        },
+        ditherAmount: {
+            type: "integer",
+            default: 50,
+            min: 0,
+            max: 100
+        },
+        oklabComparisons: {
+            type: "enum",
+            default: "1",
+            values: ["0", "1"]
+        },
+        autoLumSorting: {
+            type: "enum",
+            default: "1",
+            values: ["0", "1"]
+        }
+    }
+}

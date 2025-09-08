@@ -1,0 +1,4 @@
+{
+    condition: "false",
+    fallback: "assets/minecraft/shaders/include/code/respackopts_config.glsl"
+}

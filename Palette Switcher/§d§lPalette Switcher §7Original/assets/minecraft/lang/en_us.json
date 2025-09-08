@@ -1,0 +1,29 @@
+{
+    "rpo.paletteSwitcher.colorMode.tooltip": "\"Closest Luminance\" uses the color with the most similar brightness, and \"Closest Color\" uses the most similar color.",
+    "rpo.paletteSwitcher.colorMode.0": "Closest Luminance",
+    "rpo.paletteSwitcher.colorMode.1": "Closest Color",
+
+    "rpo.paletteSwitcher.palette.tooltip": "The palette used by the pack. You can go to §7§oassets/minecraft/textures/effect§r to add your own palette and see the defaults",
+
+    "rpo.paletteSwitcher.ditherSize.tooltip": "This switches between different dither noise textures based on the size you select. Bigger numbers will have less obvious tiling, while smaller ones might give a better.",
+    "rpo.paletteSwitcher.ditherSize.4": "4x4",
+    "rpo.paletteSwitcher.ditherSize.16": "16x16",
+    "rpo.paletteSwitcher.ditherSize.32": "32x32",
+    "rpo.paletteSwitcher.ditherSize.64": "64x64",
+    "rpo.paletteSwitcher.ditherSize.128": "128x128",
+    "rpo.paletteSwitcher.ditherSize.256": "256x256",
+    "rpo.paletteSwitcher.ditherSize.512": "512x512",
+
+    "rpo.paletteSwitcher.ditherScale.tooltip": "The size of the dither texture on the screen. Unlike the Dither Size option, this will make the dither pixels seem larger.",
+
+    "rpo.paletteSwitcher.ditherAmount.tooltip": "If you set this to 0, there will be no dithering. If you set this to 1, there will be the most dithering. If there is too much dither, try reducing this number.",
+
+    "rpo.paletteSwitcher.oklabComparisons.tooltip": "This will use colors that are more similar to what you see color as, rather than what your computer sees it as. (For \"Closest Color\" mode only)",
+    "rpo.paletteSwitcher.oklabComparisons.0": "§cFalse",
+    "rpo.paletteSwitcher.oklabComparisons.1": "§aTrue",
+
+    "rpo.paletteSwitcher.autoLumSorting": "Auto Luminance Sorting",
+    "rpo.paletteSwitcher.autoLumSorting.tooltip": "This will sort your palette from darkest to lightest color, so you dont need to order it yourself. (For \"Closest Luminance\" mode only)",
+    "rpo.paletteSwitcher.autoLumSorting.0": "§cFalse",
+    "rpo.paletteSwitcher.autoLumSorting.1": "§aTrue"
+}
