@@ -17,37 +17,44 @@ dm me if you find another solution.. my discord is alphaleoli
 float atlasSize = textureSize(Sampler0, 0).y * 0.0625;
 float atlasTileSize = 1.0 / atlasSize;
 
-const float Tolerance = 5e-3;
-const float ColorTolerance = 1e-5;
+const float AlphaTolerance = 5e-3;
+bool isAlphaClose(float alpha, float target) {
+    return abs(alpha - target) < AlphaTolerance;
+}
+
+const vec4 ColorTolerance = vec4(vec3(5e-1), AlphaTolerance);
+bool isColorClose(vec4 color, vec4 target) {
+    return all(lessThan(abs(color - target), ColorTolerance));
+}
 
 vec4 getParticleColor() {
     float yCoord = fract(texCoord0.y * atlasSize);
     vec4 tintColor = particleTint;
     vec4 textureColor = texture(Sampler0, texCoord0);
-    float oldAlpha = textureColor.a;
 
     bool isTransparentPotionParticle =
-        textureColor.rgb == vec3(0.0) &&
-        abs(oldAlpha - 0.25) < Tolerance;
+        isColorClose(textureColor, vec4(vec3(0.0), 0.25));
     bool isSolidPotionParticle =
-        abs(oldAlpha - 0.75) < Tolerance;
+        isAlphaClose(textureColor.a, 0.75);
 
-    if (isSolidPotionParticle || isTransparentPotionParticle) { // if its a potion particle
+    // If its a potion particle
+    if (isSolidPotionParticle || isTransparentPotionParticle) {
         yCoord *= 0.5;
-        if (round(tintColor.rgb * 1000000) == vec3(964706)) { // if its an invisibility particle
+
+        // If its an invisibility particle
+        if (isColorClose(tintColor, vec4(vec3(0.964706), 1.0))) {
             tintColor = vec4(1.0);
             yCoord += 0.5;
         }
-        float id = floor(texCoord0.y * atlasSize);
-        float minY = id * atlasTileSize;
+
+        // Remap the Y coordinate
+        float minY = floor(texCoord0.y * atlasSize) * atlasTileSize;
         float maxY = minY + atlasTileSize;
         yCoord = mix(minY, maxY, yCoord);
+
+        // Set the correct color
         textureColor = texture(Sampler0, vec2(texCoord0.x, yCoord));
-        float newAlpha = textureColor.a;
-        if (max(max(textureColor.r, textureColor.g), textureColor.b) < Tolerance &&
-            newAlpha > 0.245 &&
-            newAlpha < 0.255
-        ) discard;
+        if (isColorClose(textureColor, vec4(vec3(0.0), 0.25))) discard;
         textureColor.a = 1.0;
     }
 
