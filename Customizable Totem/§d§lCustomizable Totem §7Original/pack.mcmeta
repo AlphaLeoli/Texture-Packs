@@ -2,9 +2,21 @@
 	"pack": {
 		"pack_format": 34,
 		"supported_formats": {
-            "min_inclusive": 34,
-            "max_inclusive": 500
+            "min_inclusive": 1,
+            "max_inclusive": 1000
         },
 		"description": "§dMade By AlphaLeoli\n§7Totem with your skin!"
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "-1_21_3",
+				"formats": [1, 43]
+			},
+			{
+				"directory": "1_21_4-",
+				"formats": [44, 1000]
+			}
+		]
 	}
 }
