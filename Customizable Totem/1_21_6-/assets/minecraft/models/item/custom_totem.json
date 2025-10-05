@@ -1,5 +1,6 @@
 {
-	"parent": "item/totem_of_undying_display",
+	"format_version": "1.21.6",
+	"parent": "item/totem_of_undying",
 	"textures": {
 		"skin": "item/totem_skin",
 		"particle": "item/totem_skin"
