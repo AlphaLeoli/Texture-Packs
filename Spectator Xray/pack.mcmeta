@@ -1,10 +1,12 @@
 {
   "pack": {
     "pack_format": 46,
+    "min_format": 1,
+    "max_format": 1000,
     "supported_formats": {
-      "min_inclusive": 32,
-      "max_inclusive": 500
+      "min_inclusive": 1,
+      "max_inclusive": 1000
     },
-    "description": "§bBy AlphaLeoli\n§7Xray in spectator mode"
+    "description": "§bMade By AlphaLeoli\n§7Xray in spectator mode"
   }
 }
