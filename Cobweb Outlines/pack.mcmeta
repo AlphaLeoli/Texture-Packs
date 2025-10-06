@@ -1,6 +1,9 @@
 {
 	"pack": {
-		"pack_format": 9,
-		"description": "§fMade By §6AlphaLeoli\n§7§osmaller web hitboxes!"
+		"pack_format": 34,
+		"description": "§fMade By AlphaLeoli\n§7Hitboxes for webs!",
+		"min_format": 1,
+		"max_format": 1000,
+		"supported_formats": [1, 1000]
 	}
 }
