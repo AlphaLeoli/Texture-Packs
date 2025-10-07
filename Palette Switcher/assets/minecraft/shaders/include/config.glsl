@@ -1,4 +1,4 @@
-#version 150
+#version 330
 
 // 0 for Luminance (uses the color in the palette that has the closest brightness to the current pixel. Good for monochrome color palettes)
 // 1 for Closest Color (uses the color in the palette that has the closest rgb value to the current pixel. Good for palettes with lots of different colors)

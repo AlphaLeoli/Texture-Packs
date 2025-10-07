@@ -1,4 +1,4 @@
-#version 150
+#version 330
 
 flat out ivec4 palette[8];
 
@@ -48,5 +48,5 @@ flat out ivec4 palette[8];
         }
     }
 #else
-    void sortPalette() { }
+    void sortPalette() {}
 #endif

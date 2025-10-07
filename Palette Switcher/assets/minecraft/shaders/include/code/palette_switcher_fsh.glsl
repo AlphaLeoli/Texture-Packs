@@ -1,4 +1,4 @@
-#version 150
+#version 330
 
 flat in ivec4 palette[8];
 
