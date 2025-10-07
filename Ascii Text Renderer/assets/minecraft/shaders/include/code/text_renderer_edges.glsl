@@ -1,4 +1,4 @@
-#version 150
+#version 330
 
 vec2 texelSize = 1.0 / OutSize;
 vec2 vOffset = vec2(0.0, texelSize.y);
@@ -19,8 +19,8 @@ vec3 getViewPos(sampler2D depthTex, vec2 uv) {
 
 vec3 getNormal(vec2 offset) {
     vec3 p  = getViewPos(MainDepthSampler, texCoord + offset);
-    vec3 px = getViewPos(MainDepthSampler, texCoord + offset + vec2(texelSize.x, 0.0));
-    vec3 py = getViewPos(MainDepthSampler, texCoord + offset + vec2(0.0, texelSize.y));
+    vec3 px = getViewPos(MainDepthSampler, texCoord + offset + hOffset);
+    vec3 py = getViewPos(MainDepthSampler, texCoord + offset + vOffset);
     return normalize(cross(px - p, py - p));
 }
 

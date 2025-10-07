@@ -1,0 +1,37 @@
+{
+	"pack": {
+		"pack_format": 35,
+		"min_format": 1,
+		"max_format": 1000,
+		"supported_formats": [1, 1000],
+		"description": "§8Made By AlphaLeoli\n§7Set graphics to fabulous!"
+	},
+	"overlays": {
+		"entries": [
+			{
+				"directory": "1_21_2-1_21_4",
+				"min_format": 35,
+				"max_format": 51,
+				"formats": [35, 51]
+			},
+			{
+				"directory": "1_21_5",
+				"min_format": 52,
+				"max_format": 56,
+				"formats": [52, 56]
+			},
+			{
+				"directory": "1_21_6-1_21_8",
+				"min_format": 57,
+				"max_format": 64,
+				"formats": [57, 64]
+			},
+			{
+				"directory": "1_21_9-",
+				"min_format": 65,
+				"max_format": 1000,
+				"formats": [65, 1000]
+			}
+		]
+	}
+}

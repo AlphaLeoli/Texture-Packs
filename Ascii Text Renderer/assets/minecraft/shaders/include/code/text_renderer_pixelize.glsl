@@ -1,4 +1,4 @@
-#version 150
+#version 330
 
 const int pixelSize = 8;
 vec2 texelSize = 1.0 / OutSize;
