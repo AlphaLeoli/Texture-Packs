@@ -1,4 +1,4 @@
-#version 150
+#version 330
 
 /* Methods for detecting if its a potion particle:
 
@@ -22,7 +22,7 @@ bool isAlphaClose(float alpha, float target) {
     return abs(alpha - target) < AlphaTolerance;
 }
 
-const vec4 ColorTolerance = vec4(vec3(5e-1), AlphaTolerance);
+const vec4 ColorTolerance = vec4(vec3(5e-3), AlphaTolerance);
 bool isColorClose(vec4 color, vec4 target) {
     return all(lessThan(abs(color - target), ColorTolerance));
 }
