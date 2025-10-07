@@ -1,6 +1,9 @@
 {
    "pack": {
       "pack_format": 34,
-      "description": "§7By AlphaLeoli"
+      "min_format": 1,
+      "max_format": 1000,
+      "supported_formats": [1, 1000],
+      "description": "§cMade By AlphaLeoli\n§7Disables blinking hearts"
    }
 }
