@@ -1,7 +1,9 @@
 {
    "pack": {
       "pack_format": 22,
-      "supported_formats": {"min_inclusive": 22, "max_inclusive": 99},
-      "description": "§6Made by AlphaLeoli\n§7Shows player's gap count" 
+      "min_format": 1,
+      "max_format": 1000,
+      "supported_formats": [1, 1000],
+      "description": "§6Made By AlphaLeoli\n§7Shows player's gap count" 
    }
 }
