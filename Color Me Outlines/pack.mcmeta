@@ -1,0 +1,25 @@
+{
+   "pack": {
+      "pack_format": 34,
+      "min_format": 1,
+      "max_format": 1000,
+      "supported_formats": [1, 1000],
+      "description": "§bMade By AlphaLeoli\n§7Change outline colors" 
+   },
+   "overlays": {
+      "entries": [
+         {
+            "directory": "-1_21_5",
+            "min_format": 1,
+            "max_format": 62,
+            "formats": [1, 62]
+         },
+         {
+            "directory": "1_21_6-",
+            "min_format": 63,
+            "max_format": 1000,
+            "formats": [63, 1000]
+         }
+      ]
+   }
+}
