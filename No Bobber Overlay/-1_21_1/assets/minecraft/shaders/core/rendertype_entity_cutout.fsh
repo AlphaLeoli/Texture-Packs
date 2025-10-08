@@ -23,7 +23,7 @@ void main() {
     if (color.a < 0.1) {
         discard;
     }
-    if (isBobberTooClose(vertexDistance, color.a)) discard;
+    removeBobberOverlay(vertexDistance, 0.355, color.a);
     color *= vertexColor * ColorModulator;
     color.rgb = mix(overlayColor.rgb, color.rgb, overlayColor.a);
     color *= lightMapColor;

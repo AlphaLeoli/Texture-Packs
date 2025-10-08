@@ -25,7 +25,7 @@ void main() {
         discard;
     }
 #endif
-    if (isBobberTooClose(vertexDistance, color.a)) discard;
+    removeBobberOverlay(vertexDistance, 0.355, color.a);
     color *= vertexColor * ColorModulator;
 #ifndef NO_OVERLAY
     color.rgb = mix(overlayColor.rgb, color.rgb, overlayColor.a);
