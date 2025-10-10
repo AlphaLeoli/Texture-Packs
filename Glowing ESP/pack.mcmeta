@@ -1,5 +1,25 @@
 {
    "pack": {
       "pack_format": 22,
-      "description": "Apply ESP to Glowing" }
+      "description": "§5Made By AlphaLeoli\n§7Applies ESP to glowing entities",
+      "min_format": 1,
+      "max_format": 1000,
+      "supported_formats": [1, 1000]
+   },
+   "overlays": {
+      "entries": [
+         {
+               "directory": "1_21_2-1_21_5",
+               "min_format": 36,
+               "max_format": 56,
+               "formats": [36, 56]
+         },
+         {
+               "directory": "1_21_6-",
+               "min_format": 57,
+               "max_format": 1000,
+               "formats": [57, 1000]
+         }
+      ]
+   }
 }
