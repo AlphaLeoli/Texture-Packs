@@ -1,4 +1,4 @@
-#version 150
+#version 330
 
 const vec2 centerPixel = vec2(0.5, 0.5);
 

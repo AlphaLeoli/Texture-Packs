@@ -1,4 +1,4 @@
-#version 150
+#version 330
 
 // Whether or not the background is colorful
 #define colorEnabled (false) // Default false
