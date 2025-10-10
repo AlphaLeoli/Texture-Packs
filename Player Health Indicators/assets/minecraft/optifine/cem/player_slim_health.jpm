@@ -1,0 +1,15 @@
+{
+	"texture": "textures/entity/health_bar/health_bar.png",
+	"textureSize": [81, 9],
+	"submodels": [
+		{
+			"id": "health_bar",
+			"boxes": [
+				{
+					"coordinates": [-16.2, -6.5, -0.5, 32.4, 3.6, 0],
+					"uvSouth": [0, 0, 81, 9]
+				}
+			]
+		}
+	]
+}
