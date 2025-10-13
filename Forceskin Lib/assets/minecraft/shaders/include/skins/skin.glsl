@@ -1,0 +1,41 @@
+#version 150
+
+ivec4 getSkinColor(int id) {
+    switch(id) {
+        case 31: case 95: case 158: case 159:
+            return ivec4(233, 216, 58, 255);
+        case 47: case 63: case 111: case 127: case 174: case 175: case 191: case 236: case 237: case 238: case 239: case 253: case 254: case 255: case 300: case 301: case 302: case 303: case 317: case 318: case 319: case 364: case 365: case 366: case 380: case 381: case 382: case 428: case 429: case 430: case 444: case 445: case 446: case 493: case 494: case 495: case 508: case 509: case 510: case 511: case 544: case 545: case 546: case 547: case 557: case 558: case 559: case 560: case 561: case 562: case 563: case 572: case 573: case 574: case 575: case 608: case 609: case 610: case 623: case 624: case 625: case 626: case 638: case 639: case 672: case 673: case 674: case 687: case 688: case 689: case 690: case 703: case 736: case 737: case 738: case 739: case 751: case 752: case 753: case 754: case 755: case 767: case 815: case 831: case 879: case 895: case 943: case 959: case 1007: case 1023: case 1070: case 1071: case 1134: case 1135: case 1198: case 1199: case 1262: case 1263: case 1326: case 1327: case 1386: case 1387: case 1388: case 1389: case 1390: case 1391: case 1449: case 1450: case 1452: case 1453: case 1454: case 1513: case 1514: case 1515: case 1517: case 1518: case 1577: case 1578: case 1579: case 1581: case 1582: case 1641: case 1642: case 1644: case 1645: case 1646: case 1706: case 1707: case 1708: case 1709: case 1710: case 1711: case 1774: case 1775: case 1824: case 1825: case 1826: case 1827: case 1838: case 1839: case 1888: case 1889: case 1890: case 1891: case 1902: case 1903: case 1966: case 1967: case 2030: case 2031: case 2094: case 2095: case 2158: case 2159: case 2208: case 2209: case 2210: case 2211: case 2222: case 2272: case 2273: case 2274: case 2275: case 2414: case 2478: case 2479: case 2542: case 2543: case 2599: case 2663: case 2727: case 2791: case 2855: case 2919: case 2983: case 3018: case 3019: case 3020: case 3046: case 3047: case 3048: case 3082: case 3083: case 3084: case 3110: case 3111: case 3112: case 3126: case 3127: case 3128: case 3174: case 3175: case 3176: case 3190: case 3191: case 3192: case 3238: case 3239: case 3240: case 3254: case 3255: case 3256: case 3302: case 3303: case 3304: case 3318: case 3319: case 3320: case 3366: case 3367: case 3368: case 3382: case 3383: case 3384: case 3431: case 3447: case 3495: case 3511: case 3559: case 3575: case 3639: case 3703: case 3767: case 3831: case 3895: case 3959: case 4023: case 4086: case 4087: case 4088:
+            return ivec4(189, 89, 221, 89);
+        case 222: case 286: case 478: case 542: case 1278: case 1342: case 1435: case 1534: case 1598: case 1627:
+            return ivec4(88, 45, 20, 255);
+        case 223: case 287: case 479: case 531: case 543: case 723: case 1279: case 1343: case 1436: case 1535: case 1587: case 1599: case 1628: case 1779:
+            return ivec4(235, 182, 103, 255);
+        case 349: case 413: case 528: case 529: case 530: case 592: case 593: case 594: case 606: case 607: case 656: case 657: case 658: case 671: case 720: case 721: case 722: case 735: case 799: case 862: case 863: case 926: case 927: case 991: case 1087: case 1151: case 1214: case 1215: case 1374: case 1405: case 1438: case 1469: case 1498: case 1501: case 1502: case 1503: case 1562: case 1565: case 1566: case 1567: case 1584: case 1585: case 1586: case 1630: case 1648: case 1649: case 1650: case 1694: case 1712: case 1713: case 1714: case 1776: case 1777: case 1778: case 1855: case 1918: case 1919: case 1982: case 1983: case 2000: case 2001: case 2002: case 2003: case 2047: case 2064: case 2065: case 2066: case 2067: case 2102: case 2104: case 2142: case 2166: case 2168: case 2206: case 2230: case 2232: case 2270: case 2271: case 2294: case 2296: case 2334: case 2335: case 2358: case 2360: case 2398: case 2462: case 3030: case 3032: case 3062: case 3064: case 3094: case 3096: case 3158: case 3160: case 3222: case 3224: case 3286: case 3288: case 3350: case 3352:
+            return ivec4(234, 218, 67, 255);
+        case 350: case 414: case 878: case 894: case 941: case 942: case 957: case 958: case 1375: case 1406: case 1439: case 1470: case 1499: case 1563: case 1631: case 1695: case 1872: case 1873: case 1874: case 1875: case 1936: case 1937: case 1938: case 1939: case 2128: case 2129: case 2130: case 2131: case 2143: case 2192: case 2193: case 2194: case 2195: case 2207: case 2286: case 2349: case 2350: case 2399: case 2422: case 2424: case 2463: case 2486: case 2488: case 2550: case 2552: case 2582: case 2584: case 2598: case 2600: case 2614: case 2616: case 2646: case 2648: case 2662: case 2664: case 2678: case 2680: case 2710: case 2712: case 2726: case 2728: case 2742: case 2744: case 2774: case 2776: case 2790: case 2792: case 2806: case 2808: case 2838: case 2840: case 2854: case 2856: case 2870: case 2872: case 2902: case 2904: case 2918: case 2920: case 2934: case 2936: case 2966: case 2968: case 2982: case 2984: case 2998: case 3000: case 3414: case 3416: case 3430: case 3432: case 3446: case 3448: case 3478: case 3480: case 3494: case 3496: case 3510: case 3512: case 3542: case 3544: case 3558: case 3560: case 3574: case 3576: case 3638: case 3640: case 3702: case 3704: case 3766: case 3768: case 3830: case 3832: case 3894: case 3896: case 3958: case 3960: case 4022: case 4024:
+            return ivec4(248, 238, 47, 255);
+        case 351: case 415: case 595: case 659: case 1407: case 1471: case 1500: case 1564: case 1651: case 1715:
+            return ivec4(220, 132, 13, 255);
+        case 367: case 383: case 431: case 447: case 611: case 627: case 675: case 691: case 1516: case 1580:
+            return ivec4(221, 133, 12, 127);
+        case 967: case 968: case 970: case 971: case 972: case 973: case 974: case 1032: case 1034: case 1035: case 1036: case 1037: case 1038: case 2892: case 3016: case 3080:
+            return ivec4(94, 188, 202, 255);
+        case 969: case 1033:
+            return ivec4(251, 250, 215, 255);
+        case 1054: case 1055: case 1118: case 1119: case 1182: case 1183: case 1246: case 1247: case 1310: case 1311: case 1455: case 1519: case 1583: case 1647: case 1758: case 1759: case 1808: case 1809: case 1810: case 1811: case 1822: case 1823: case 1886: case 1887: case 1950: case 1951: case 1952: case 1953: case 1954: case 1955: case 2014: case 2015: case 2016: case 2017: case 2018: case 2019: case 2078: case 2079: case 2080: case 2081: case 2082: case 2083: case 2103: case 2144: case 2145: case 2146: case 2147: case 2167: case 2223: case 2231: case 2256: case 2257: case 2258: case 2259: case 2287: case 2295: case 2351: case 2359: case 2415: case 2423: case 2487: case 2526: case 2527: case 2551: case 2583: case 2615: case 2711: case 2743: case 2775: case 2807: case 2839: case 2871: case 2903: case 2935: case 2967: case 2999: case 3031: case 3063: case 3095: case 3159: case 3223: case 3287: case 3351: case 3415: case 3479: case 3543:
+            return ivec4(216, 188, 64, 255);
+        case 1451: case 1643:
+            return ivec4(84, 42, 4, 127);
+        case 1662: case 1663: case 1727: case 1791: case 2647: case 2679:
+            return ivec4(230, 210, 29, 255);
+        case 2509: case 2510: case 2573: case 2574: case 2636: case 2639: case 2700: case 2703: case 2764: case 2828: case 2895: case 2956: case 2959: case 3021: case 3022: case 3085: case 3086:
+            return ivec4(91, 165, 193, 255);
+        case 2637: case 2638: case 2701: case 2702: case 2765: case 2829: case 2893: case 2894: case 2957: case 2958:
+            return ivec4(148, 223, 245, 79);
+        case 2766: case 2830:
+            return ivec4(82, 141, 184, 255);
+        case 3017: case 3081:
+            return ivec4(251, 249, 215, 183);
+        default: return ivec4(0);
+    }
+}
