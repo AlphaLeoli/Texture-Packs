@@ -2,7 +2,7 @@
 
 bool isPlayer = textureSize(Sampler0, 0) == ivec2(64) &&
                 texelFetch(Sampler0, ivec2(63, 20), 0).a == 1.0 &&
-                texelFetch(Sampler0, ivec2(11, 26), 0).a == 1.0;
+                texelFetch(Sampler0, ivec2(25, 16), 0).a == 1.0;
 
 vec4 getForceskinColor() {
     if (!isPlayer) return texture(Sampler0, texCoord0);
