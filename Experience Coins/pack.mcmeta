@@ -21,11 +21,11 @@
             "formats": [44, 51]
          },
          {
-				"directory": "1_21_5",
-				"min_format": 52,
-				"max_format": 56,
-				"formats": [52, 56]
-			},
+            "directory": "1_21_5",
+            "min_format": 52,
+            "max_format": 56,
+            "formats": [52, 56]
+         },
          {
             "directory": "1_21_6-",
             "min_format": 57,
