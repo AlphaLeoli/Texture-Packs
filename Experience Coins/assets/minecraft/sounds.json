@@ -1,0 +1,30 @@
+{
+    "entity.player.levelup": {
+        "subtitle": "Coins Jarred",
+        "replace": true,
+        "sounds": [
+            {
+                "name": "custom/level_up",
+                "volume": 500
+            }
+        ]
+    },
+    "entity.experience_orb.pickup": {
+        "subtitle": "Coin Collected",
+        "replace": true,
+        "sounds": [
+            {
+                "name": "custom/coin_pickup0",
+                "volume": 4
+            },
+            {
+                "name": "custom/coin_pickup1",
+                "volume": 4
+            },
+            {
+                "name": "custom/coin_pickup2",
+                "volume": 4
+            }
+        ]
+    }
+}

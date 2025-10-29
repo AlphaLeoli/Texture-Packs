@@ -1,0 +1,26 @@
+{
+    "argument.entity.options.level.description": "Coins",
+    "item.minecraft.experience_bottle": "Jar of Coins",
+    "entity.minecraft.experience_orb": "Coin",
+    "entity.minecraft.experience_bottle": "Thrown Jar of Coins",
+
+    "gamerule.doTileDrops.description": "Controls resource drops from blocks, including coins.",
+    "gamerule.doMobLoot.description": "Controls resource drops from mobs, including coins.",
+
+    "commands.experience.add.levels.success.multiple": "Gave %s jars of coins to %s players",
+    "commands.experience.add.levels.success.single": "Gave %s jars of coins to %s",
+    "commands.experience.add.points.success.multiple": "Gave %s coins to %s players",
+    "commands.experience.add.points.success.single": "Gave %s coins to %s",
+    "commands.experience.query.levels": "%s has %s jars of coins",
+    "commands.experience.query.points": "%s has %s coins",
+    "commands.experience.set.levels.success.multiple": "Set %s jars of coins on %s players",
+    "commands.experience.set.levels.success.single": "Set %s jars of coins on %s",
+    "commands.experience.set.points.invalid": "Cannot set coins above the maximum coins for the player's current coin jars",
+    "commands.experience.set.points.success.multiple": "Set %s coins on %s players",
+    "commands.experience.set.points.success.single": "Set %s coins on %s",
+
+    "container.repair.cost": "Requires %1$s Coin Jars",
+    "container.enchant.level.many": "%s Jars of Coins",
+    "container.enchant.level.one": "1 Coin Jar",
+    "container.enchant.level.requirement": "Requires %s Coin Jars"
+}

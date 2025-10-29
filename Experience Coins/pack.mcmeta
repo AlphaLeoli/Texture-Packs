@@ -1,0 +1,31 @@
+{
+   "pack": {
+      "pack_format": 34,
+      "min_format": 1,
+      "max_format": 1000,
+      "supported_formats": [1, 1000],
+      "description": "§6By AlphaLeoli + girlthatbites\n§7Experience points --> coins" 
+   },
+   "overlays": {
+      "entries": [
+         {
+            "directory": "1_21_2-1_21_4",
+            "min_format": 36,
+            "max_format": 51,
+            "formats": [36, 51]
+         },
+         {
+				"directory": "1_21_5",
+				"min_format": 52,
+				"max_format": 56,
+				"formats": [52, 56]
+			},
+         {
+            "directory": "1_21_6-",
+            "min_format": 57,
+            "max_format": 1000,
+            "formats": [57, 1000]
+         }
+      ]
+   }
+}
