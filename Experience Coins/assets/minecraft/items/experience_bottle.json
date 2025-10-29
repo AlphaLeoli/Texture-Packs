@@ -1,0 +1,12 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "minecraft:item/experience_bottle",
+    "tints": [
+      {
+        "type": "minecraft:constant",
+        "value": [ 0.08, 0.06, 0.07 ]
+      }
+    ]
+  }
+}
