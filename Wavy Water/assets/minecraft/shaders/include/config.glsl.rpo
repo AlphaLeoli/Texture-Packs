@@ -1,0 +1,4 @@
+{
+  condition: "false",
+  fallback: "assets/minecraft/shaders/include/code/wavy_water_respackopts.glsl"
+}

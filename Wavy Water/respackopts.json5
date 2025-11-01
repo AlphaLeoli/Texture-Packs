@@ -3,20 +3,20 @@
     version: 13,
     capabilities: ["FileFilter", "DirFilter"],
     conf: {
+        height: {
+            min: 0.1,
+            default: 0.25,
+            max: 0.5
+        },
+        frequency: {
+            min: 0.25,
+            default: 0.5,
+            max: 0.75
+        },
         speed: {
-            min: 1,
-            default: 5,
-            max: 10
-        },
-        amplitude: {
-            min: 1,
-            default: 5,
-            max: 10
-        },
-        size: {
-            min: 1,
-            default: 5,
-            max: 10
+            min: 500,
+            default: 3000,
+            max: 5000
         }
     }
 }

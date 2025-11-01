@@ -1,0 +1,7 @@
+{
+    expansions: {
+        height: "waves.height",
+        frequency: "waves.frequency",
+        speed: "waves.speed"
+    }
+}
