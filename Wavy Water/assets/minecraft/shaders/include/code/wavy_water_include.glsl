@@ -12,3 +12,9 @@ float getWaveOffset() {
 
     return (xWave + zWave) * 0.25;
 }
+
+/*
+To make it repeat every 3.2 seconds:
+    - Make sure the last multiplier of both waves are 1.0
+    - Set the speed constant to 2356.194490192345
+*/
