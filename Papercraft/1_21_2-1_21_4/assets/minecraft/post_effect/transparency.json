@@ -101,7 +101,7 @@
             "inputs": [
                 {
                     "sampler_name": "In",
-                    "target": "edges"
+                    "target": "paper"
                 }
             ],
             "output": "minecraft:main"
