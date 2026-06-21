@@ -1,6 +1,6 @@
 #version 150
 
-#moj_import <fog.glsl>
+#moj_import <minecraft:fog.glsl>
 
 in vec3 Position;
 in vec2 UV0;
@@ -17,12 +17,12 @@ out float vertexDistance;
 out vec2 texCoord0;
 out vec4 vertexColor;
 
-#moj_import <code/remove_particles.glsl>
+#moj_import <minecraft:code/remove_particles.glsl>
 
 void main() {
     gl_Position = ProjMat * ModelViewMat * vec4(Position, 1.0);
 
-    vertexDistance = fog_distance(ModelViewMat, Position, FogShape);
+    vertexDistance = fog_distance(Position, FogShape);
     texCoord0 = UV0;
     vertexColor = getParticleColor(Color) * texelFetch(Sampler2, UV2 / 16, 0);
 }
