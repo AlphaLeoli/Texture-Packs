@@ -67,14 +67,14 @@
             "outtarget": "palette",
             "auxtargets": [
                 {
-                    "sampler_name": "DitherSampler",
+                    "name": "DitherSampler",
                     "id": "dither_${ditherSize}",
                     "width": 4,
                     "height": 4,
                     "bilinear": false
                 },
                 {
-                    "sampler_name": "PaletteSampler",
+                    "name": "PaletteSampler",
                     "id": "${palette}",
                     "width": 32,
                     "height": 1,
