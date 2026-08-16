@@ -1,0 +1,23 @@
+{
+    id: "lego",
+    version: 13,
+    capabilities: ["FileFilter", "DirFilter"],
+    conf: {
+        legoSize: {
+            type: number,
+            min: 0.0,
+            default: 1.0,
+            max: 5.0
+        },
+        useLegoColors: {
+            type: "enum",
+            default: "0",
+            values: ["0", "1"]
+        },
+        colorSpace: {
+            type: "enum",
+            default: "lut",
+            values: ["lut", "oklab_lut"]
+        }
+    }
+}

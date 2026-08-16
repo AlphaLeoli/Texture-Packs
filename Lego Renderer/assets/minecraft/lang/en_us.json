@@ -1,0 +1,11 @@
+{
+    "rpo.lego.legoSize.tooltip": "Change the size of the legos on the screen",
+
+    "rpo.lego.useLegoColors.tooltip": "Toggles the use of Lego's colors (will look 8-bit)",
+    "rpo.lego.useLegoColors.1": "§aTrue",
+    "rpo.lego.useLegoColors.0": "§cFalse",
+
+    "rpo.lego.colorSpace.tooltip": "Use whichever looks more natural. The \"Use Lego Colors\" setting must be enabled for this to work.",
+    "rpo.lego.colorSpace.lut": "RGB",
+    "rpo.lego.colorSpace.oklab_lut": "Oklab"
+}

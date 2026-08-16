@@ -1,0 +1,6 @@
+{
+    expansions: {
+        legoSize: "lego.legoSize",
+        useLegoColors: "lego.useLegoColors"
+    }
+}
