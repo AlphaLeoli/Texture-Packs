@@ -1,0 +1,4 @@
+{
+    condition: "false",
+    fallback: "assets/respackopts/post_effect/transparency.json"
+}
