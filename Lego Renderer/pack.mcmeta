@@ -4,7 +4,7 @@
 		"min_format": 1,
 		"max_format": 1000,
 		"supported_formats": [1, 1000],
-		"description": "§dMade By AlphaLeoli\n§7Set graphics to fabulous!"
+		"description": "§cMade By AlphaLeoli\n§7Set graphics to fabulous!"
 	},
 	"overlays": {
 		"entries": [
