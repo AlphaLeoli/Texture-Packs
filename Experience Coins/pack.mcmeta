@@ -33,10 +33,22 @@
             "formats": [52, 56]
          },
          {
-            "directory": "1_21_6-",
+            "directory": "1_21_6-1_21_11",
             "min_format": 57,
+            "max_format": 81,
+            "formats": [57, 81]
+         },
+         {
+            "directory": "26_1-",
+            "min_format": 82,
+            "max_format": 84,
+            "formats": [82, 84]
+         },
+         {
+            "directory": "26_2-",
+            "min_format": 85,
             "max_format": 1000,
-            "formats": [57, 1000]
+            "formats": [85, 1000]
          }
       ]
    }
