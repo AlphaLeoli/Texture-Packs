@@ -1,0 +1,7 @@
+{
+    expansions: {
+        height: "leaves.height",
+        frequency: "leaves.frequency",
+        speed: "leaves.speed"
+    }
+}
