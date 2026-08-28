@@ -1,0 +1,9 @@
+{
+	"pack": {
+		"pack_format": 35,
+		"description": "§fMade By AlphaLeoli\n§73D Skin Layers!",
+		"min_format": 1,
+		"max_format": 1000,
+		"supported_formats": [1, 1000]
+	}
+}
