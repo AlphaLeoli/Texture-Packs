@@ -37,4 +37,5 @@ void main() {
     texCoord0 = UV0;
     texCoord1 = UV1;
     texCoord2 = UV2;
+    #moj_import <minecraft:code/remove_glint.glsl>
 }
